@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 7;
 
 let play = true;
 let noCount = 0;
@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Chị của bé tiệc vời nhất, niceeeee sư";
+  titleElement.innerHTML = "Phải thế chứ!!!";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -42,12 +42,14 @@ function resizeYesButton() {
 
 function generateMessage(noCount) {
   const messages = [
-    "Cố lên chị ạ",
-    "Có bé Khoa nè",
-    "Hành trình mới cơ hội mới",
+    "Say 'Yes' đi, năn nỉ",
+    "Say 'Yes' đi, năn nỉ",
+    "Đừng có 'No' nựa",
+    "Chuyện đâu còn có đó",
     "<3",
-    "Cố lên chị ọa",
-    "bùm bùm chíu chíu",
+    "Suy nghĩ kỹ chưa?",
+    "Thôi mà!!! Yes đi pls",
+    "Thôi mà!!! Yes đi pls",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
